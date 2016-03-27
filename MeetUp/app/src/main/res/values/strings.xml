@@ -1,4 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MeetUp</string>
     <string name="action_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="meetup_account">MeetUpAccount</string>
 </resources>

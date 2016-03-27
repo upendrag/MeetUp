@@ -10,7 +10,15 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled = true
     }
+
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "2g"
+        incremental true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -22,6 +30,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    compile (name:'kinvey-android-2.10.5', ext:'aar')
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.2.1'
 }
